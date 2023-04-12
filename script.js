@@ -13,7 +13,7 @@ const player2 = document.querySelector('.player--1');
 
 
 
-//starting conditions
+//starting 
 let scores, currentScore, activePlayer, playing;
 
 const init = function(){
