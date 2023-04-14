@@ -5,11 +5,11 @@ read toWhereCopy
 if [ -d "$fromWhereCopy" ] && [ -d "$toWhereCopy" ]; then
 echo "Moving files.."
 cd $fromWhereCopy/
-    tar cvzf files.tar.gz *
+    tar czf files.tar.gz *
     mv files.tar.gz ../$toWhereCopy/
     rm *
     cd ../$toWhereCopy/
-    tar xvzf files.tar.gz
+    tar xzf files.tar.gz
     rm files.tar.gz
     echo "done"
 else
